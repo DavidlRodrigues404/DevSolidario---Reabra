@@ -1,11 +1,323 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Reabra Serviços - Maringá, PR</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700;800;900&family=Outfit:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles.css">
 </head>
+
 <body>
-    <p>hello world</p>
+
+    <!-- NAV -->
+    <nav>
+        <div class="logo">
+            <div class="logo-icon"></div>
+
+            <div class="logo-txt">
+                Reabra
+                <span>Serviços</span>
+            </div>
+        </div>
+
+        <div class="nav-links">
+            <a href="#servicos">Serviços</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#orcamento">Orçamento</a>
+        </div>
+
+        <button class="nav-cta" onclick="document.getElementById('orcamento').scrollIntoView({behavior:'smooth'})">
+            🛠️ Solicitar orçamento
+        </button>
+    </nav>
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div>
+
+            <div class="hero-tag rv in">
+                Técnicos Certificados • Maringá, PR
+            </div>
+
+            <h1 class="hero-title rv in">
+                Serviços de qualidade.
+            </h1>
+
+            <p class="hero-sub rv in">
+                Elétrica, hidráulica, alvenaria e ar-condicionado.
+                Atendimento rápido, orçamento gratuito e serviço com garantia —
+                direto com quem faz.
+            </p>
+
+            <div class="hero-btns rv in">
+                <a class="btn-primary" href="https://wa.me/5544984221603" target="_blank">
+                    💬 Chamar no WhatsApp
+                </a>
+
+                <a class="btn-sec" href="#servicos">
+                    Ver serviços
+                </a>
+            </div>
+
+            <div class="hero-chips rv in">
+
+                <div class="chip">
+                    <div class="chip-dot"></div>
+                    Técnicos Certificados
+                </div>
+
+                <div class="chip">
+                    <div class="chip-dot"></div>
+                    Orçamento Gratuito
+                </div>
+
+                <div class="chip">
+                    <div class="chip-dot"></div>
+                    Atendimento Rápido
+                </div>
+
+                <div class="chip">
+                    <div class="chip-dot"></div>
+                    Serviço com Garantia
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="hero-right rv in">
+
+            <div class="profile-card">
+
+                <!-- SUBSTITUIR pela foto do Abraão quando disponível -->
+                <div class="profile-photo"></div>
+
+                <div class="profile-name">Abraão de Oliveira</div>
+
+                <div class="profile-cargo">
+                    Técnico em Serviços Residenciais
+                </div>
+
+                <div class="profile-tags">
+                    <span class="ptag ptag-azul">⚡ Elétrica</span>
+                    <span class="ptag ptag-azul">🚰 Hidráulica</span>
+                    <span class="ptag ptag-verde">🧱 Alvenaria</span>
+                    <span class="ptag ptag-am">❄️ Ar-condicionado</span>
+                </div>
+
+                <div class="online-badge">
+                    <div class="online-dot"></div>
+                    Disponível para atendimento
+                </div>
+
+            </div>
+
+            <div class="mini-cards">
+
+                <div class="mc">
+                    <div class="mc-emoji">⭐</div>
+                    <div class="mc-val">4.9</div>
+                    <div class="mc-lbl">Avaliação média</div>
+                </div>
+
+                <div class="mc">
+                    <div class="mc-emoji"></div>
+                    <div class="mc-val">+500</div>
+                    <div class="mc-lbl">Serviços realizados</div>
+                </div>
+
+                <div class="mc">
+                    <div class="mc-emoji"></div>
+                    <div class="mc-val">20+</div>
+                    <div class="mc-lbl">Anos de experiência</div>
+                </div>
+
+                <div class="mc">
+                    <div class="mc-emoji"></div>
+                    <div class="mc-val">100%</div>
+                    <div class="mc-lbl">Com garantia</div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- STRIP DIFERENCIAIS -->
+    <div class="strip">
+
+        <div class="strip-item">
+            <div class="strip-icon"></div>
+            <div>
+                <div class="strip-txt">Técnicos Certificados</div>
+                <div class="strip-sub">Profissionais qualificados</div>
+            </div>
+        </div>
+
+        <div class="strip-item">
+            <div class="strip-icon"></div>
+            <div>
+                <div class="strip-txt">Atendimento Rápido</div>
+                <div class="strip-sub">Agenda no mesmo dia</div>
+            </div>
+        </div>
+
+        <div class="strip-item">
+            <div class="strip-icon"></div>
+            <div>
+                <div class="strip-txt">Orçamento Gratuito</div>
+                <div class="strip-sub">Sem compromisso</div>
+            </div>
+        </div>
+
+        <div class="strip-item">
+            <div class="strip-icon"></div>
+            <div>
+                <div class="strip-txt">Serviço com Garantia</div>
+                <div class="strip-sub">Problema resolvido de vez</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SERVIÇOS -->
+    <section class="servicos" id="servicos">
+
+        <div class="section-header">
+
+            <div class="s-tag">
+                O que fazemos
+            </div>
+
+            <h2 class="s-title">
+                Nossos Serviços
+            </h2>
+
+            <p class="s-desc">
+                “Soluções completas para os problemas mais comuns da sua casa,
+                com qualidade e rapidez.”
+            </p>
+
+        </div>
+
+        <div class="srv-grid">
+
+            <!-- CARD ELÉTRICA -->
+            <div class="srv-card el rv">
+
+                <div class="srv-top">
+
+                    <div class="srv-icon-wrap ic-el">
+                        ⚡
+                    </div>
+
+                    <span class="srv-badge">
+                        ✓ Disponível
+                    </span>
+
+                </div>
+
+                <div class="srv-name">
+                    Elétrica
+                </div>
+
+                <div class="srv-lista">
+
+                    <div class="srv-item">
+                        Instalação e troca de chuveiros elétricos
+                    </div>
+
+                    <div class="srv-item">
+                        Troca e instalação de tomadas e interruptores
+                    </div>
+
+                    <div class="srv-item">
+                        Substituição e instalação de disjuntores
+                    </div>
+
+                    <div class="srv-item">
+                        Identificação e reparo de curto-circuito
+                    </div>
+
+                    <div class="srv-item">
+                        Instalação de pontos de luz e ventiladores
+                    </div>
+
+                </div>
+
+               <button class="srv-btn"
+                    onclick="document.getElementById('orcamento').scrollIntoView({behavior:'smooth'})">
+                    Solicitar orçamento ↗
+                </button>
+
+            </div>
+
+            <!-- CARD HIDRÁULICA -->
+            <div class="srv-card hid rv2">
+
+                <div class="srv-top">
+
+                    <div class="srv-icon-wrap ic-hid">
+                        💧
+                    </div>
+
+                    <span class="srv-badge">
+                        ✓ Disponível
+                    </span>
+
+                </div>
+
+                <div class="srv-name">
+                    Hidráulica
+                </div>
+
+                <div class="srv-lista">
+
+                    <div class="srv-item">
+                        Conserto de vazamentos em paredes e tubulações
+                    </div>
+
+                    <div class="srv-item">
+                        Troca e instalação de torneiras e registros
+                    </div>
+
+                    <div class="srv-item">
+                        Reparo e troca de caixas de descarga
+                    </div>
+
+                    <div class="srv-item">
+                        Desentupimento de pias, ralos e vasos
+                    </div>
+
+                    <div class="srv-item">
+                        Instalação de filtros e purificadores
+                    </div>
+
+                </div>
+
+                <button class="srv-btn"
+                    onclick="document.getElementById('orcamento').scrollIntoView({behavior:'smooth'})">
+                    Solicitar orçamento ↗
+                </button>
+
+
+            </div>
+
+        </div>
+
+        </div>
+
+    </section>
+
 </body>
+
 </html>
