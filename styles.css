@@ -82,7 +82,7 @@ nav {
   height: 42px;
   object-fit: contain;
 
-  border: 0 !important;
+  border-radius: 8px;
   outline: 0 !important;
   box-shadow: none !important;
 

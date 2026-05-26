@@ -37,6 +37,7 @@ form.addEventListener('submit', e => {
   const desc = document.getElementById('f-desc').value.trim();
 
   if (!nome) { alert('Por favor, informe seu nome.'); return; }
+  if (!tel && !desc) { alert('Por favor, informe ao menos um telefone ou descrição.'); return; }
   if (!srv)  { alert('Por favor, selecione o serviço.'); return; }
 
   const msg =
